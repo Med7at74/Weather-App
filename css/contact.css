@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+@media (min-width: 575px) {
+  .navbar-toggler {
+    color: #009ad8;
+  }
+}
+
+nav {
+  background-color: #1e202b;
+}
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 350;
+  font-size: 14px;
+  padding: 5px 25px !important;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: rgb(0, 154, 216);
+  border-color: rgb(0, 154, 216);
+  padding: 5px 25px;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(0, 154, 216);
+  border-color: rgb(0, 154, 216);
+}
+
+.weather-logo-text {
+  font-size: 0.614286em;
+  display: block;
+  color: rgb(191, 193, 200);
+}
+.weather-logo-head {
+  margin-bottom: 3px;
+  font-size: 0.94286em;
+  color: white;
+  font-weight: 700;
+}
+.toggle-icon {
+  padding: 8px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.toggle-icon:hover {
+  color: #009ad8;
+  border: 1px solid #009ad8;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+/***************** Contact css ************/
+
+:root {
+  --color-default: #212529;
+  --color-secondary: #212529;
+  --color-tertiary: #212529;
+  --color-light-grey: #eee;
+  --color-light: #fff;
+  --color-primary: rgb(0, 154, 216);
+  --chefs-item-color: #fff;
+  --color-btn: #fff;
+  --color-btn-hover: hsl(0, 84%, calc(44% + 5%));
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --animation-duration: 400ms;
+}
+#contact {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  transition: all 0.5s;
+  background-image: url(../image/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-head {
+  text-align: center;
+}
+.contact-head p {
+  color: var(--color-tertiary);
+}
+.contact-head h2 {
+  font-family: var(--font-primary);
+  font-size: 3.1rem;
+  font-weight: 100;
+}
+.contact-head span {
+  color: var(--color-primary);
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+.adress {
+  background-color: #323544;
+  text-align: center;
+  padding: 0.5625rem;
+  transition: all 0.5s;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.adress:hover {
+  opacity: 1;
+}
+.adress .adress-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.adress-content h3 {
+  text-decoration: none;
+  color: var(--color-light);
+  padding: 0 0 0.1rem 0;
+}
+.adress-content a {
+  text-decoration: none;
+  color: inherit;
+}
+.adress-content span {
+  color: var(--color-default);
+  font-weight: bold;
+}
+.adress .Icon {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-size: 1.1rem;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin-right: 0.932rem; */
+}
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: var(--color-light); */
+  padding: 1rem;
+  box-shadow: 0 0 1.875rem #00000014;
+  transition: all 0.5s;
+}
+
+.contact-form input {
+  padding: 1rem;
+  border: 4px solid transparent;
+}
+.contact-form textarea {
+  padding: 1rem;
+  border: .1px solid transparent;
+}
+.contact-form .div-btn {
+  text-align: center;
+}
+/***************************** form input *********************************/
+
+.input {
+  background-color: #323544;
+  padding: 5px;
+  transition: all 1s;
+  opacity: 0.9;
+}
+.input:hover {
+  opacity: 1;
+}
+.form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+  padding: 0 10px;
+}
+.form-control:focus {
+  color: black;
+  background-color: none;
+  border-color: none;
+  outline: none;
+  box-shadow: none;
+}
+.form-control {
+border: none;
+}
+.form-control:focus::placeholder {
+  color: black;
+}
+.contact-form .btn {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 8px 16px;
+}
+
+/*  footer*/
+
+footer {
+  /* padding: 5rem 0; */
+  background-color: rgb(38, 41, 54);
+}
+.exit {
+  padding: 5rem 0 3rem;
+}
+.subscripe-icon li span a {
+  all: unset;
+}
+.subscripe-icon li span {
+  margin: 10px;
+  background-color: #1e202b;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.1rem;
+}
+.subscripe-icon li span:hover {
+  background-color: #009ad8;
+}

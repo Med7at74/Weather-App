@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+@media (min-width: 575px) {
+  .navbar-toggler {
+    color: #009ad8;
+  }
+}
+
+nav {
+  background-color: #1e202b;
+}
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 350;
+  font-size: 14px;
+  padding: 5px 25px !important;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: rgb(0, 154, 216);
+  border-color: rgb(0, 154, 216);
+  padding: 5px 25px;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(0, 154, 216);
+  border-color: rgb(0, 154, 216);
+}
+
+.weather-logo-text {
+  font-size: 0.614286em;
+  display: block;
+  color: rgb(191, 193, 200);
+}
+.weather-logo-head {
+  margin-bottom: 3px;
+  font-size: 0.94286em;
+  color: white;
+  font-weight: 700;
+}
+.toggle-icon {
+  padding: 8px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.toggle-icon:hover {
+  color: #009ad8;
+  border: 1px solid #009ad8;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+/*********************************************************/
+#home {
+  background-image: url(../image/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#searchLocationInput {
+  background-color: #1e202b;
+  padding: 10px;
+}
+.form-control::placeholder {
+  color: lightgray;
+  opacity: 1;
+  padding: 0 10px;
+}
+.form-control {
+  color: lightgray !important;
+}
+.form-control:focus {
+  color: none;
+  background-color: none;
+  border-color: none;
+  outline: none;
+  box-shadow: none;
+}
+#searchBtn {
+  background-color: #1e202b;
+  color: lightgray;
+  transition: all 0.3s;
+}
+
+#searchBtn:hover {
+  color: rgb(0, 154, 216);
+}
+
+/*  */
+.day-date {
+  background-color: #2d303d;
+}
+.box {
+  background-color: #323544;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.tomorrow {
+  background-color: rgb(38, 41, 54);
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.box:hover,
+.tomorrow:hover {
+  opacity: 1;
+}
+.day-date p {
+  margin-bottom: 0;
+}
+
+.temprature-today {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 4.5rem;
+  color: #fff;
+}
+.temprature-status {
+  color: #009ad8;
+  font-weight: 400;
+}
+
+.temprature-tomorrow {
+  font-weight: 700;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.temprature-status-tomorrow {
+  padding-bottom: 15px;
+  color: #009ad8;
+  font-weight: 400;
+}
+
+/*  footer*/
+
+footer {
+  /* padding: 5rem 0; */
+  background-color: rgb(38, 41, 54);
+}
+.exit {
+  padding: 7rem 0 5rem;
+}
+
+#subscribe-input {
+  background-color: #1e202b;
+  padding: 15px 10px;
+}
+#subscribe-input.form-control {
+  border: none;
+  color: lightgray;
+}
+
+#subscribe-btn {
+  background-color: #009ad8;
+  color: lightgray;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 5px;
+  top: 5px;
+  right: 5px;
+}
+#subscribe-btn:hover {
+  color: #009ad8;
+  background-color: #1e202b;
+  border: 1px solid #009ad8;
+}
+.subscripe-icon li span a {
+  all: unset;
+}
+.subscripe-icon li span {
+  margin: 10px;
+  background-color: #1e202b;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.1rem;
+}
+.subscripe-icon li span:hover {
+  background-color: #009ad8;
+}
+/************************** subscribe ****************************/
+.subscribe-container {
+  
+  justify-content: center;
+  align-items: center;
+  /* animation: medhatanimate 1s; */
+  transition: all 3s;
+}
+.subscribe-box {
+  background-color: #17a2b8;
+  padding: 20px;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+}
+
+.subscribe-box h2 {
+  color: #fff;
+}
+
+#message2 {
+  transition: all 1s;
+}

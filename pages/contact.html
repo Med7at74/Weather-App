@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------- weather logo  -------------->
+    <link rel="icon" href="../image/icon.png" />
+
+    <!-------------- fontawsome link  -------------->
+    <link rel="stylesheet" href="../css/all.min.css" />
+
+    <!-------------- bootstrap link  -------------->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-------------- custom style css  -------------->
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!---------------------- navbar ---------------------->
+    <nav
+      class="navbar navbar-expand-sm navbar-dark py-5 z-3 top-0 start-0 end-0"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex" href="#">
+          <img class="w-25 me-2" src="../image/logo@2x.png" />
+          <div>
+            <h1 class="weather-logo-head">Weather</h1>
+            <small class="weather-logo-text">tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler d-lg-none text-white border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggle-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a id="homePage" class="nav-link me-5 active mb-1" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="contactPage" class="nav-link me-5" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!---------------------- Contact  section ---------------------->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-head">
+          <p>CONTACT</p>
+          <h2>Need Help ? <span>Contact Us</span></h2>
+        </div>
+        <div class="contact-content">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="adress">
+                <div class="d-flex justify-content-center w-100">
+                  <span class="Icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                </div>
+
+                <div class="adress-content">
+                  <h3>Email Us</h3>
+                  <p><a href="#home">contact@example.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="adress">
+                <div class="d-flex justify-content-center w-100">
+                  <span class="Icon">
+                    <i class="fa-regular fa-map"></i>
+                  </span>
+                </div>
+
+                <div class="adress-content">
+                  <h3>Our Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="adress">
+                <div class="d-flex justify-content-center w-100">
+                  <span class="Icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="adress-content">
+                  <h3>Call Us</h3>
+                  <p><a href="#home">+1 5589 55488 55</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="adress">
+                <div class="d-flex justify-content-center w-100">
+                  <span class="Icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </span>
+                </div>
+                <div class="adress-content">
+                  <h3>Opening Hours</h3>
+                  <p>
+                    <span>Mon-Sat:</span> 11AM - 23PM;
+                    <span>Sunday :</span> Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <input
+              class="w-50 input form-control mt-3 pe-3"
+              type="text"
+              placeholder="Your name.."
+            />
+            <input
+              class="w-50 input form-control mt-3"
+              type="email"
+              placeholder="Your email.."
+            />
+            <input
+              class="w-100 input form-control mt-3"
+              type="text"
+              placeholder="Subject.."
+            />
+            <textarea
+              class="w-100 input form-control mt-3"
+              placeholder="Messege.."
+              rows="2"
+            ></textarea>
+            <div class="div-btn w-100">
+              <button id="sendMessage" class="btn mt-3">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- footer ---------------------->
+    <footer>
+      <div class="exit">
+        <div class="container my-0 py-0">
+          <div class="row gy-4">
+            <div class="col-md-12 my-0 py-0">
+              <div class="mt-3">
+                <ul
+                  class="subscripe-icon list-unstyled d-flex justify-content-center"
+                >
+                  <li>
+                    <span
+                      ><a href="https://www.facebook.com" class=""
+                        ><i class="fa-brands fa-facebook-f"></i></a
+                    ></span>
+                  </li>
+                  <li>
+                    <span
+                      ><a href="https://www.twitter.com"
+                        ><i class="fa-brands fa-twitter"></i></a
+                    ></span>
+                  </li>
+                  <li>
+                    <span
+                      ><a href="https://www.google.com/intl/ar/gmail/about/"
+                        ><i class="fa-brands fa-google-plus"></i></a
+                    ></span>
+                  </li>
+                  <li>
+                    <span
+                      ><a href="https://www.pinterest.com/"
+                        ><i class="fa-brands fa-pinterest"></i></a
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js "></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

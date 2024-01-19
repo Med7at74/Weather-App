@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------- weather logo  -------------->
+    <link rel="icon" href="./image/icon.png" />
+
+    <!-------------- fontawsome link  -------------->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-------------- bootstrap link  -------------->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-------------- sweet alert cdn  -------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <!-------------- custom style css  -------------->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-------------- navbar  -------------->
+    <nav class="navbar navbar-expand-sm navbar-dark py-5 z-3">
+      <div class="container">
+        <a class="navbar-brand d-flex" href="#">
+          <img class="w-25 me-2" src="./image/logo@2x.png" />
+          <div>
+            <h1 class="weather-logo-head">Weather</h1>
+            <small class="weather-logo-text">tagline goes here</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler d-lg-none text-white border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggle-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a id="homePage" class="nav-link me-5 active mb-1" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="contactPage" class="nav-link me-5" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------- home section  -------------->
+    <section id="home">
+        <div class="container pb-5">
+          <div class="row">
+           <div class="col-md-8 mx-auto">
+            <div class="my-5 d-flex">
+              <input
+                type="text"
+                name="search"
+                id="searchLocationInput"
+                class="form-control rounded-5"
+                placeholder="Find Your Location"
+              />
+              <!-- <button id="searchBtn" class="btn ms-4 rounded-5 px-4">
+                Search
+              </button> -->
+            </div>
+           </div>
+          </div>
+          <div
+            id="rowData"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-4 gy-4"
+          >
+            <div class="col">
+              <div class="box rounded-2">
+                <div
+                  class="day-date d-flex justify-content-between p-2 rounded-2"
+                >
+                  <p id="today-day"></p>
+                  <p id="today-date"></p>
+                </div>
+                <div class="p-4">
+                  <div class="my-3">
+                    <h2 id="city-location" class="my-1"></h2>
+                    <small id="country-location" class="pb-2"></small>
+                  </div>
+                  <div class="d-flex justify-content-lg-around">
+                    <h1 id="today-temp" class="temprature-today"></h1>
+                    <img id="today-img" class="w-25" alt="" />
+                  </div>
+                  <p id="today-status" class="my-2 temprature-status"></p>
+                  <div
+                    class="icons-information d-flex justify-content-around pt-3"
+                  >
+                    <span
+                      ><i class="fa fa-umbrella me-1"></i>
+                      <span id="humidty"></span>%</span
+                    >
+                    <span
+                      ><i class="fa-solid fa-wind me-1"></i>
+                      <span id="wind-speed"></span> km/h</span
+                    >
+                    <span
+                      ><i class="fa-regular fa-compass me-1"></i>
+                      <span id="wind-direction"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tomorrow rounded-2">
+                <div
+                  class="day-date d-flex justify-content-around p-2 rounded-2"
+                >
+                  <p class="nextday"></p>
+                </div>
+                <div class="p-4">
+                  <div class="d-flex flex-column align-items-center mt-4">
+                    <img
+                      class="w-25 nextday-icon"
+                      src="./image/logo@2x.png"
+                      alt=""
+                    />
+                    <h1 class="temprature-tomorrow nextday-max">
+                      36.5<sup>o</sup>C
+                    </h1>
+                    <p class="nextday-min">19.5<sup>o</sup>C</p>
+                  </div>
+                  <p
+                    class="my-2 temprature-status-tomorrow text-center nextday-status"
+                  >
+                    Sunny
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tomorrow rounded-2">
+                <div
+                  class="day-date d-flex justify-content-around p-2 rounded-2"
+                >
+                  <p class="nextday"></p>
+                </div>
+                <div class="p-4">
+                  <div class="d-flex flex-column align-items-center mt-4">
+                    <img
+                      class="w-25 nextday-icon"
+                      src="./image/logo@2x.png"
+                      alt=""
+                    />
+                    <h1 class="temprature-tomorrow nextday-max">
+                      36.5<sup>o</sup>C
+                    </h1>
+                    <p class="nextday-min">19.5<sup>o</sup>C</p>
+                  </div>
+                  <p
+                    class="my-2 temprature-status-tomorrow text-center nextday-status"
+                  >
+                    Sunny
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-------------- footer -------------->
+    <footer>
+      <div class="exit">
+        <div class="container my-0 py-0">
+          <div class="row gy-5">
+            <div class="col-md-8 my-0 py-0 mb-3">
+              <div class="input-valid mb-3 position-relative z-2">
+                <input
+                  oninput="emailValidation()"
+                  type="email"
+                  name="email"
+                  id="subscribe-input"
+                  class="form-control rounded-4 mb-0"
+                  placeholder="Enter your email to subscribe..."
+                />
+
+                <input
+                  id="subscribe-btn"
+                  type="submit"
+                  class="btn ms-4 rounded-5 px-2"
+                  value="Subscribe"
+                />
+              </div>
+              <small id="message" class="d-none fs-6 mt-0 pt-0 mb-3"></small>
+              <!-- <small id="message2" class="opacity-0 fs-6 ">medhat</small> -->
+            </div>
+            <div class="col-md-4 my-0 py-0">
+              <div class="mt-3">
+                <ul
+                  class="subscripe-icon list-unstyled d-flex justify-content-center"
+                >
+                  <li>
+                    <span
+                      ><a href="https://www.facebook.com" class=""
+                        ><i class="fa-brands fa-facebook-f"></i></a
+                    ></span>
+                  </li>
+                  <li>
+                    <span
+                      ><a href="https://www.twitter.com"
+                        ><i class="fa-brands fa-twitter"></i></a
+                    ></span>
+                  </li>
+                  <li>
+                    <span
+                      ><a href="https://www.google.com/intl/ar/gmail/about/"
+                        ><i class="fa-brands fa-google-plus"></i></a
+                    ></span>
+                  </li>
+                  <li>
+                    <span
+                      ><a href="https://www.pinterest.com/"
+                        ><i class="fa-brands fa-pinterest"></i></a
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-------------- sweet alert cdn & bootstrap & custom js -------------->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js "></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>
